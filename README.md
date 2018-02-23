@@ -62,39 +62,39 @@ L'outil indique alors pour chaque élément ou modification quel membre du proje
 + Compagnies de théâtre
 
 
-## User stories
+## Idées de user stories
 
-+ us01 - En tant que **visiteur**, je peux consulter les différents projets.
++ En tant que **visiteur**, je peux consulter les différents projets.
 
-+ us02 - En tant que **visiteur**, je peux m'enregistrer et créer un compte.
++ En tant que **visiteur**, je peux m'enregistrer et créer un compte.
 
-+ us03 - En tant qu'**utilisatrice**, je peux me connecter à mon espace personnel.
++ En tant qu'**utilisatrice**, je peux me connecter à mon espace personnel.
 
-+ us04 - En tant qu'**utilisatrice**, je peux créer un nouveau projet.
++ En tant qu'**utilisatrice**, je peux créer un nouveau projet.
 
-+ us05 - En tant qu'**utilisatrice**, je peux ajouter des éléments à la librairie de mon projet.
++ En tant qu'**utilisatrice**, je peux ajouter des éléments à la librairie de mon projet.
 
-+ us06 - En tant qu'**utilisatrice**, je peux organiser ma librairie en taguant des éléments, et en leur attribuant des catégories et/ou des couleurs.
++ En tant qu'**utilisatrice**, je peux organiser ma librairie en taguant des éléments, et en leur attribuant des catégories et/ou des couleurs.
 
-+ us07 - En tant qu'**utilisatrice**, je peux organiser mon espace de travail (mood board) en ...
++ En tant qu'**utilisatrice**, je peux organiser mon espace de travail (mood board) en ...
 + ajoutant / supprimant des éléments
 + reliant les éléments entre eux par des ramifications
 
 ... pour visualiser et articuler mes idées.
 
-+ us08 - En tant qu'**utilisatrice**, je peux enregistrer l'organisation de mon espace de travail, pour conserver des versions antérieures.
++ En tant qu'**utilisatrice**, je peux enregistrer l'organisation de mon espace de travail, pour conserver des versions antérieures.
 
-+ us09 - En tant qu'**utilisatrice**, je peux consulter ces anciennes versions, pour visualiser l'évolution de mon projet.
++ En tant qu'**utilisatrice**, je peux consulter ces anciennes versions, pour visualiser l'évolution de mon projet.
 
-+ us10 - En tant qu'**utilisatrice**, je peux indiquer que j'amorce une nouvelle phase de mon projet, pour que cela apparaisse comme une démarcation dans la timeline.
++ En tant qu'**utilisatrice**, je peux indiquer que j'amorce une nouvelle phase de mon projet, pour que cela apparaisse comme une démarcation dans la timeline.
 
-+ us11 - En tant qu'**utilisatrice**, je peux copier un url ou générer des badges, pour partager mon projet par mail, sur les réseaux sociaux ou ailleurs.
++ En tant qu'**utilisatrice**, je peux copier un url ou générer des badges, pour partager mon projet par mail, sur les réseaux sociaux ou ailleurs.
 
-+ us12 - En tant qu'**utilisatrice**, je peux inviter une autre personne utilisatrice à contribuer à mon projet, ou accepter une invitation à contribuer à un projet, pour en faire un projet collectif.
++ En tant qu'**utilisatrice**, je peux inviter une autre personne utilisatrice à contribuer à mon projet, ou accepter une invitation à contribuer à un projet, pour en faire un projet collectif.
 
-+ us13 - En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux voir quel membre est l'auteur de chacune des modifications du projet, pour suivre les contributions apportées au projet.
++ En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux voir quel membre est l'auteur de chacune des modifications du projet, pour suivre les contributions apportées au projet.
 
-+ us14 - En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux proposer à l'équipe d'amorcer une nouvelle phase du projet, ou confirmer la proposition de changement de phase émise par un membre de l'équipe.
++ En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux proposer à l'équipe d'amorcer une nouvelle phase du projet, ou confirmer la proposition de changement de phase émise par un membre de l'équipe.
 
 + us15 - En tant qu'**utilisatrice privilégiée**, je peux choisir le degré de confidentialité de mes projets et les rendre publics ou privés. (-> professionnels)
 
@@ -107,3 +107,23 @@ Scrapbook
 Draft / Brouillon
 Share / Partage
 Mindmap / Carte d'organisation d'idées
+
+
+***
+
+## Lots fonctionnels, user stories et tâches techniques
+
++ **lot 1.** 	> Connection
+..+ **us 1.1.** 	> En tant que **visiteur**, je peux m'enregistrer et créer un compte.
+..+ **us 1.2.** 	> En tant qu'**utilisatrice**, je peux me connecter à mon espace personnel.
+
+
+
+
+
+
+
+
+
+
+parce que j'ai besoin de montrer l'avancement de mon projet
