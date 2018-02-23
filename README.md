@@ -113,14 +113,28 @@ Mindmap / Carte d'organisation d'idées
 
 ## Lots fonctionnels, user stories et tâches techniques
 
-+ **lot 1.** 	> Connection
-..+ **us 1.1.** 	> En tant que **visiteur**, je peux m'enregistrer et créer un compte.
-..+ **us 1.2.** 	> En tant qu'**utilisatrice**, je peux me connecter à mon espace personnel.
+##### lot 1. > Connection
+
++ **us 1.1.** > En tant que **visiteur**, je peux m'enregistrer et créer un compte, pour devenir créateur ou contributeur d'un projet.
+
++ **us 1.2.** > En tant qu'**utilisatrice**, je peux me connecter à mon espace personnel, et ainsi accéder à toutes les fonctionnalités gratuites de l'outil.
 
 
+##### lot 2. > Création de projet
+
++ **us 2.1.** > En tant qu'**utilisatrice**, je peux initier un nouveau projet et le nommer, parce que j'ai besoin d'un nouvel espace où rassembler mes idées.
 
 
+##### lot 3. > Ajout d'éléments
 
++ **us 3.1.** > En tant qu'**utilisatrice**, je peux ajouter des éléments (images, textes, liens, vidéos, musiques) en les uploadant depuis l'ordinateur ou en les enregistrant, pour garder en mémoire toutes mes sources d'inspirations.
+
++ **us 3.2.** > En tant qu'**utilisatrice**, je peux associer les éléments ajoutés à un projet (ou plusieurs), pour alimenter la bibliothèque de mon projet.
+
++ **us 3.3.** > En tant qu'**utilisatrice**, je peux créer des éléments (mots clés, notes, *photos depuis la caméra interne*, *prise de son depuis le micro intégré*), pour alimenter la bibliothèque de mon projet.
+
+
+us 3.2 dans un nouveau lot 4 ". > Organisation des éléments" ... ?
 
 
 
