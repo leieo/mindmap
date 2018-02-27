@@ -9,20 +9,20 @@ L'utilisateur se connecte pour accéder à son compte personnel sur lequel il pe
 
 L'usage de base est **gratuit**. Les projets en cours sont **publics** et consultables par tous.
 
-[description du projet](#description)
-[lots fonctionnels & user stories](#lots_us)
-[objectif visé](#objectif)
++ [description détaillée](#description)
++ [lots fonctionnels & user stories](#lots_us)
++ [objectif visé](#objectif)
 
 ***
 
-## <a name="description"></a>Description du projet
+## <a name="description"></a>Description détaillée
 
 
 ### Outils
 
 ###### Bibliothèque
 
-C'est là où sont stockés les différents éléments. Elle contient tout le matériau de travail accumulé par l'utilisateur au fil du projet.
+C'est là où seront stockés les différents éléments d'un projet. Elle contiendra tout le matériau de travail accumulé par l'utilisateur au fil du projet.
 
 + mots clés
 + images
@@ -32,34 +32,34 @@ C'est là où sont stockés les différents éléments. Elle contient tout le ma
 + mindmaps
 
 
-###### Mood board (ou espace de travail)
+###### Moodboard (ou espace de travail)
 
 C'est un espace virtuel où apparaissent les éléments que l'utilisatrice choisit d'utiliser.
 
-1. On peut supprimer des éléments du mood board, mais ils seront toujours présents dans la librairie.
+1. On peut supprimer des éléments du moodboard, mais ils seront toujours présents dans la bibliothèque.
 2. On y voit non seulement les éléments, mais aussi les liens et l'arborescence qui déterminent la manière dont ils sont reliés et organisés entre eux. 
-3. On peut enregistrer des versions successives du mood board
+3. On peut enregistrer des versions successives de la moodboard
 
 
 ###### Timeline
 
 Elle permet de retracer l'avancée du projet depuis sa création. On peut y voir à quel moment chaque élément a été ajouté, et quand la moodboard a été modifiée.
 
-Le projet peut être découpé en différentes phases ( par exemple : analyse - recherches - développement - prototype) clairement visibles sur la timeline.
+Le projet peut être découpé en différentes phases visibles sur la timeline. Par exemple : analyse - recherches - développement - prototype
 
 
 ###### Groupe
 
 Chaque utilisateur qui a un compte a la possibilité de participer à un projet partagé entre plusieurs utilisateurs.
 
-L'outil indique alors pour chaque élément ou modification quel membre du projet en est l'auteur.
+Pour chaque ajout, suppression ou modification, l'outil indique quel membre du projet en est l'auteur.
 
 
 ### Exemples de profils ciblés
 
 + Développeur.euse d'applications
 + Romancier.ères
-+ Cineastes
++ Cinéastes
 + Vidéastes
 + Menuisières.iers
 + Créateurs.trices de mode
@@ -70,17 +70,18 @@ L'outil indique alors pour chaque élément ou modification quel membre du proje
 
 ### Mots clés
 
-Scrapbook -
+Scrapbook / Album / Carnet -
 Draft / Brouillon -
 Share / Partage -
-Mindmap / Carte d'organisation d'idées
+Mindmap / Carte d'organisation d'idées -
+
 
 
 ***
 
 ## <a name="lots_us"></a>Lots fonctionnels & User stories
 
-#### lot 1. > Connection
+##### lot 1. > Connection
 
 + **us 1.1.** > En tant que **visiteur**, je peux m'enregistrer et créer un compte, pour devenir créateur ou contributeur d'un projet.
 
@@ -88,19 +89,21 @@ Mindmap / Carte d'organisation d'idées
 accéder aux fonctionnalités gratuites de l'outil.
 
 
-#### lot 2. > Création de projet
+##### lot 2. > Création de projet
 
 + **us 2.1.** > En tant qu'**utilisatrice**, je peux ajouter un nouveau projet et le nommer, parce que j'ai besoin d'un nouvel espace où rassembler mes idées, dédié à un projet spécifique.
 
 
-#### lot 3. > Ajout d'éléments
+##### lot 3. > Ajout d'éléments
 
 + **us 3.1.** > En tant qu'**utilisatrice**, je peux ajouter des éléments (images, textes, liens, vidéos, musiques) en les uploadant depuis l'ordinateur ou en les enregistrant, pour stocker au même endroit toutes mes sources d'inspiration.
 
-+ **us 3.2.** > En tant qu'**utilisatrice**, je peux créer des éléments (mots clés, notes, *photos depuis la caméra interne*, *prise de son depuis le micro intégré*), pour alimenter les bibliothèques de mes projets.
++ **us 3.2.** > En tant qu'**utilisatrice**, je peux créer des éléments textuel (mots clés, notes), pour alimenter les bibliothèques de mes projets.
+
++ **us 3.3** > En tant qu'**utilisatrice**, je peux produire du contenu multimédia via l'outil, en utilisant mon téléphone ou mon ordinateur (*photos et vidéos depuis la caméra interne*, *prises de son depuis le micro intégré*, *captures d'écran*).
 
 
-#### lot 4. > Organisation des éléments
+##### lot 4. > Organisation des éléments
 
 + **us 4.1.** > En tant qu'**utilisatrice**, je peux associer ces éléments à un projet (ou plusieurs), pour alimenter les bibliothèques de mes projets.
 
@@ -113,7 +116,7 @@ accéder aux fonctionnalités gratuites de l'outil.
 + **us 4.5.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
 
 
-#### lot 5. > Partage
+##### lot 5. > Partage
 
 
 + **us 5.1.** > En tant que **visiteur**, je peux parcourir les différents projets, leurs bibliothèques et leurs moodboards, pour avoir un aperçu de l'outil et des fonctionnalités qu'il propose aux personnes inscrites.
@@ -121,14 +124,14 @@ accéder aux fonctionnalités gratuites de l'outil.
 + **us 5.2.** > En tant qu'**utilisatrice**, je peux copier un url ou générer des badges, afin de partager mon projet par mail, sur les réseaux sociaux ou ailleurs.
 
 
-##### lot 6. > Enregistrement de versions
+###### lot 6. > Enregistrement de versions
 
 + **us 6.1.** > En tant qu'**utilisatrice**, je peux enregistrer l'organisation de mon espace de travail à un instant T, pour en conserver plusieurs versions.
 
 + **us 6.2.** > En tant qu'**utilisatrice**, je peux consulter les versions antérieures de mon espace de travail, pour visualiser l'évolution de mon projet.
 
 
-##### lot 7. > Projets de groupe
+###### lot 7. > Projets de groupe
 
 + **us 7.1.** > En tant qu'**utilisatrice**, je peux inviter une autre personne utilisatrice à contribuer à mon projet, pour en faire un projet collectif.
 
@@ -137,7 +140,7 @@ accéder aux fonctionnalités gratuites de l'outil.
 + **us 7.3.** > En tant que **contributrice** d'un projet collectif, je peux voir quel membre est l'auteur de chacune des modifications du projet, pour suivre les contributions apportées au projet.
 
 
-##### lot 8. > Timeline
+###### lot 8. > Timeline
 
 + **us 8.1.** > En tant qu'**utilisatrice**, je peux visualiser une timeline de l'un de mes projets, afin de voir à quels moments et comment le projet a été modifié depuis sa création.
 
@@ -146,7 +149,7 @@ accéder aux fonctionnalités gratuites de l'outil.
 + **us 8.3.** > En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux proposer à l'équipe d'amorcer une nouvelle phase du projet, ou confirmer la proposition de changement de phase émise par un membre de l'équipe.
 
 
-##### lot 9. > Version premium
+###### lot 9. > Version premium
 
 + **us 9.1.** > En tant qu'**utilisatrice privilégiée**, je peux passer un (ou plusieurs) de mes projets en mode privé, pour protéger la confidentialité de mes projets en cours. (-> professionnels)
 
@@ -157,12 +160,17 @@ accéder aux fonctionnalités gratuites de l'outil.
 ## <a name="objectif"></a>Objectif visé
 
 La version présentée pour la certification comprendra au moins :
-+ les lots fonctionnels **1.**, **2.** et **3.** 
-+ le lot **4.**, à l'exception de la user story **4.5.**
-+ la première partie du lot **5.** (**us 5.1.**)
++ les lots fonctionnels **1.** et **2.** 
++ le lot fonctionnel **3.**  à l'exception de la user story **3.3.**
++ le lot fonctionnel **4.** à l'exception de la user story **4.5.**
++ la première partie du lot **5.** (user story **5.1.**)
 
-Les versions suivantes pourront inclure, par ordre de priorité : 
+Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... : 
 + la complétion du lot **4.**
 + la complétion du lot **5.**
-+ les autres lots fonctionnels
++ la user story **8.1.**
++ les lots **6.** et **7.**
++ le lot **9.**
++ la complétion du lot **8.**
++ la complétion du lot **3.**
 
