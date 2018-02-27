@@ -12,6 +12,7 @@ L'usage de base est **gratuit**. Les projets en cours sont **publics** et consul
 + [description détaillée](#description)
 + [lots fonctionnels & user stories](#lots_us)
 + [objectif visé](#objectif)
++ [trello](https://trello.com/b/Cx1Ofg1Q/moodboard)
 
 ***
 
@@ -96,24 +97,28 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 ##### lot 3. > Ajout d'éléments
 
-+ **us 3.1.** > En tant qu'**utilisatrice**, je peux ajouter des éléments (images, textes, liens, vidéos, musiques) en les uploadant depuis l'ordinateur ou en les enregistrant, pour stocker au même endroit toutes mes sources d'inspiration.
++ **us 3.1.** > En tant qu'**utilisatrice**, je peux ajouter des éléments (*images*, *documents pdf*, *vidéos*, *musiques*) en les important depuis l'ordinateur, afin de stocker au même endroit toutes mes sources d'inspiration.
 
-+ **us 3.2.** > En tant qu'**utilisatrice**, je peux créer des éléments textuel (mots clés, notes), pour alimenter les bibliothèques de mes projets.
++ **us 3.2.** > En tant qu'**utilisatrice**, je peux créer des éléments textuel (*mots clés*, *liens*, *notes*), pour alimenter les bibliothèques de mes projets.
 
-+ **us 3.3** > En tant qu'**utilisatrice**, je peux produire du contenu multimédia via l'outil, en utilisant mon téléphone ou mon ordinateur (*photos et vidéos depuis la caméra interne*, *prises de son depuis le micro intégré*, *captures d'écran*).
++ **us 3.3** > En tant qu'**utilisatrice**, je peux produire du contenu multimédia via l'outil, en utilisant mon téléphone ou mon ordinateur (*photos et vidéos depuis la caméra interne*, *prises de son depuis le micro intégré*, *captures d'écran*), pour alimenter les bibliothèques de mes projets.
+
++ **us 3.4** > En tant qu'**utilisatrice**, je peux modifier ou supprimer un élément, et parcourir l'ensemble des éléments ajoutés, pour gérer les bibliothèques de mes projets.
 
 
 ##### lot 4. > Organisation des éléments
 
-+ **us 4.1.** > En tant qu'**utilisatrice**, je peux associer ces éléments à un projet (ou plusieurs), pour alimenter les bibliothèques de mes projets.
++ **us 4.1.** > En tant qu'**utilisatrice**, je peux associer mes éléments à un projet (ou plusieurs), pour alimenter les bibliothèques de mes projets.
 
-+ **us 4.2.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en choisissant d'y afficher ou non les éléments issus de la bibliothèque. Cela me permet de visualiser les éléments nécessaires au développement actuel du projet, tout en ayant à disponibilité (dans la bibliothèque) les éléments de ses phases de développement passées ou futures.
++ **us 4.2.** > En tant qu'**utilisatrice**, je peux parcourir la bibliothèque de chacun de mes projets, et en supprimer ou y ajouter des éléments, afin de gérer ces bibliothèques. 
 
-+ **us 4.3.** > En tant qu'**utilisatrice**, je peux attribuer à chaque élément un degré d'importance, afin d'agir sur la hiérarchisation des éléments du moodboard.
++ **us 4.3.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en choisissant d'y afficher ou non les éléments issus de la bibliothèque. Cela me permet de visualiser les éléments nécessaires au développement actuel du projet, tout en ayant à disponibilité (dans la bibliothèque) les éléments de ses phases de développement passées ou futures.
 
-+ **us 4.4.** > En tant qu'**utilisatrice**, je peux organiser l'une de mes bibliothèques en taguant ses éléments, et/ou en leur attribuant une couleur, afin de consulter facilement tous les éléments d'une même catégorie.
++ **us 4.4.** > En tant qu'**utilisatrice**, je peux attribuer à chaque élément un degré d'importance, afin d'agir sur la hiérarchisation des éléments du moodboard.
 
-+ **us 4.5.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
++ **us 4.5.** > En tant qu'**utilisatrice**, je peux organiser l'une de mes bibliothèques en taguant ses éléments, et/ou en leur attribuant une couleur, afin de consulter facilement tous les éléments d'une même catégorie.
+
++ **us 4.6.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
 
 
 ##### lot 5. > Partage
@@ -162,7 +167,7 @@ accéder aux fonctionnalités gratuites de l'outil.
 La version présentée pour la certification comprendra au moins :
 + les lots fonctionnels **1.** et **2.** 
 + le lot fonctionnel **3.**  à l'exception de la user story **3.3.**
-+ le lot fonctionnel **4.** à l'exception de la user story **4.5.**
++ le lot fonctionnel **4.** à l'exception de la user story **4.6.**
 + la première partie du lot **5.** (user story **5.1.**)
 
 Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... : 
