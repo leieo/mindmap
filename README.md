@@ -101,9 +101,9 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 + **us 3.2.** > En tant qu'**utilisatrice**, je peux créer des éléments textuel (*mots clés*, *liens*, *notes*), pour alimenter les bibliothèques de mes projets.
 
-+ **us 3.3** > En tant qu'**utilisatrice**, je peux produire du contenu multimédia via l'outil, en utilisant mon téléphone ou mon ordinateur (*photos et vidéos depuis la caméra interne*, *prises de son depuis le micro intégré*, *captures d'écran*), pour alimenter les bibliothèques de mes projets.
++ **us 3.3** > En tant qu'**utilisatrice**, je peux modifier ou supprimer un élément, et parcourir l'ensemble des éléments ajoutés, pour gérer les bibliothèques de mes projets.
 
-+ **us 3.4** > En tant qu'**utilisatrice**, je peux modifier ou supprimer un élément, et parcourir l'ensemble des éléments ajoutés, pour gérer les bibliothèques de mes projets.
++ **us 3.4** > En tant qu'**utilisatrice**, je peux produire du contenu multimédia via l'outil, en utilisant mon téléphone ou mon ordinateur (*photos et vidéos depuis la caméra interne*, *prises de son depuis le micro intégré*, *captures d'écran*), pour alimenter les bibliothèques de mes projets.
 
 
 ##### lot 4. > Organisation des éléments
@@ -151,14 +151,14 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 + **us 8.2.** > En tant qu'**utilisatrice**, je peux indiquer que j'amorce une nouvelle phase de mon projet, parce que j'ai besoin de montrer l'avancement de mon projet.
 
-+ **us 8.3.** > En tant qu'**utilisatrice contributrice** d'un projet collectif, je peux proposer à l'équipe d'amorcer une nouvelle phase du projet, ou confirmer la proposition de changement de phase émise par un membre de l'équipe.
++ **us 8.3.** > En tant que ** contributrice** d'un projet collectif, je peux proposer à l'équipe d'amorcer une nouvelle phase du projet, ou confirmer la proposition de changement de phase émise par un membre de l'équipe.
 
 
 ###### lot 9. > Version premium
 
 + **us 9.1.** > En tant qu'**utilisatrice privilégiée**, je peux passer un (ou plusieurs) de mes projets en mode privé, pour protéger la confidentialité de mes projets en cours. (-> professionnels)
 
-+ **us 9.2.** > En tant qu'**utilisatrice privilégiée**, j'ai accès à une version datée des timelines des autres projets, et je peux voir quel membre est auteur d'une contribution sur les projets collectifs.  (-> recruteurs)
++ **us 9.2.** > En tant qu'**utilisatrice privilégiée**, j'ai accès à une version datée des timelines des autres projets, et je peux voir quel membre est auteur d'une contribution sur les projets collectifs, afin d'avoir une vision détaillée des contributions et du rythme de travail de chacun. (-> recruteurs,  professeurs, ...) 
 
 ***
 
@@ -166,7 +166,7 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 La version présentée pour la certification comprendra au moins :
 + les lots fonctionnels **1.** et **2.** 
-+ le lot fonctionnel **3.**  à l'exception de la user story **3.3.**
++ le lot fonctionnel **3.**  à l'exception de la user story **3.4.**
 + le lot fonctionnel **4.** à l'exception de la user story **4.6.**
 + la première partie du lot **5.** (user story **5.1.**)
 
