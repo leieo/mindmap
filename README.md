@@ -120,6 +120,8 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 + **us 4.6.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
 
++ **us 4.7.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
+
 
 ##### lot 5. > Partage
 
@@ -178,4 +180,5 @@ Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... :
 + le lot **9.**
 + la complétion du lot **8.**
 + la complétion du lot **3.**
+
 
