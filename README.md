@@ -75,6 +75,7 @@ Scrapbook / Album / Carnet -
 Draft / Brouillon -
 Share / Partage -
 Mindmap / Carte d'organisation d'idées -
+Wall / Mur
 
 
 
@@ -120,11 +121,9 @@ accéder aux fonctionnalités gratuites de l'outil.
 
 + **us 4.6.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
 
-+ **us 4.7.** > En tant qu'**utilisatrice**, je peux organiser mon espace de travail (moodboard) en reliant entre eux les éléments affichés. Cela me permet de matérialiser visuellement les liens entre mes idées.
-
++ **us 4.7.** > En tant qu'**utilisatrice**, je peux nommer les liens entre les éléments et leur attribuer une couleur, afin de matérialiser visuellement les liens entre mes idées.
 
 ##### lot 5. > Partage
-
 
 + **us 5.1.** > En tant que **visiteur**, je peux parcourir les différents projets, leurs bibliothèques et leurs moodboards, pour avoir un aperçu de l'outil et des fonctionnalités qu'il propose aux personnes inscrites.
 
