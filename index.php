@@ -1,5 +1,6 @@
 <?php
-// Récupération des données
+
+// Connexion à la base de données
 try {
     $database = new PDO('mysql:host=localhost;dbname=mindmap; charset=utf8', 'root', 'simplonco');
 }
@@ -8,7 +9,9 @@ catch(Exception $e) {
         die('Erreur : '.$e->getMessage());
 }
 
-$query = $database->query('SELECT name FROM user WHEN id = 1');
+
+// Je récupère toutes les données
+$query = $database->query('SELECT * FROM user');
 
 ?>
 
@@ -22,6 +25,28 @@ $query = $database->query('SELECT name FROM user WHEN id = 1');
 </head>
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
+
+	<!-- Je récupère chaque entrée (ligne) une par une ... -->
+	<?php
+	while ($data = $query->fetch()) {
+	?>
+	
+	<!-- ... et affiche une à une les données qu'elle contient. -->
+	<p>
+		<strong>Member <?php echo $data['id']; ?> </strong><br>
+		Name : <?php echo $data['name']; ?> <br>
+		Email : <?php echo $data['email']; ?> <br>
+		Password : <?php echo $data['password']; ?>
+
+	</p> 
+
+	<?php
+	}
+
+	// Je clotûre le traitement de la requête
+	$query->closeCursor();
+	
+	?>
 
 </body>
 </html>

@@ -180,4 +180,3 @@ Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... :
 + la complétion du lot **8.**
 + la complétion du lot **3.**
 
-
