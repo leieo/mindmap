@@ -48,7 +48,7 @@ catch(Exception $e) {
 
 
 	// Je récupère les id et les noms
-	$browse = $database->query('SELECT id, name FROM user');
+	$browse = $database->query('SELECT id, name FROM user ORDER BY name DESC LIMIT 1, 2');
 
 	?>
 	<p>
@@ -66,6 +66,30 @@ catch(Exception $e) {
 
 			// je termine la requête
 			$browse->closeCursor();
+
+			$id = '';
+			$name = 'test';
+			$email = 'test@te.st';
+			$password = 'test';
+
+			try {
+				$add = $database->prepare('INSERT INTO user(id, name, email, password) VALUES (:id, :name, :email, :password)');
+				$add->execute(array(
+					'id' => $id,
+					'name' => $name,
+					'email' => $email,
+					'password' => $password
+				));
+
+				echo 'ok tout est bon';
+			}
+
+			catch(Exception $e)
+
+			{
+			        die('Erreur : '.$e->getMessage());
+			}
+
 		?>
 	</p>
 
