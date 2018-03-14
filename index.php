@@ -9,10 +9,6 @@ catch(Exception $e) {
         die('Erreur : '.$e->getMessage());
 }
 
-
-// Je récupère toutes les données
-$query = $database->query('SELECT * FROM user');
-
 ?>
 
 
@@ -26,8 +22,12 @@ $query = $database->query('SELECT * FROM user');
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
 
-	<!-- Je récupère chaque entrée (ligne) une par une ... -->
 	<?php
+
+	// Je récupère toutes les données
+	$query = $database->query('SELECT * FROM user');
+
+	// Je récupère chaque entrée (ligne) une par une ...
 	while ($data = $query->fetch()) {
 	?>
 	
@@ -45,8 +45,29 @@ $query = $database->query('SELECT * FROM user');
 
 	// Je clotûre le traitement de la requête
 	$query->closeCursor();
-	
+
+
+	// Je récupère les id et les noms
+	$browse = $database->query('SELECT id, name FROM user');
+
 	?>
+	<p>
+		<?php
+			// Je récupère chaque entrée (ligne) une par une ...
+			while ($username = $browse->fetch()) {
+		?>
+		
+		<!-- ... et affiche une à une les données qu'elle contient. -->
+		<strong> <?php echo $username['id']; ?> </strong>
+		<?php echo $username['name']; ?> <br>
+
+		<?php
+			}
+
+			// je termine la requête
+			$browse->closeCursor();
+		?>
+	</p>
 
 </body>
 </html>
