@@ -86,10 +86,12 @@ catch(Exception $e) {
 		'oldname' => $oldname
 		));
 
-		echo 'ça marche l\'update';
+		echo 'modifier ok / ';
 	} catch(Exception $e) {
 	        die('Erreur : '.$e->getMessage());
 	}
+
+	$update->closeCursor();
 
 	?>
 
@@ -110,7 +112,7 @@ catch(Exception $e) {
 			'password' => $password
 		));
 
-		echo 'ok tout est bon';
+		echo 'ajouter ça marche / ';
 	}
 
 	catch(Exception $e)
@@ -119,6 +121,21 @@ catch(Exception $e) {
 	        die('Erreur : '.$e->getMessage());
 	}
 
+	$add->closeCursor();
+
+	?>
+
+	<?php
+	try {
+			$database->exec('DELETE FROM user WHERE id%2=0 AND name=\'modif\'');
+			echo 'supprimer au poil / ';
+	} catch(Exception $e) {
+	        die('Erreur : '.$e->getMessage());
+	}
+	/*
+	$nb_deletions = 
+	echo $nb_deletions . ' entrées ont été supprimées !';
+	*/
 	?>
 
 
