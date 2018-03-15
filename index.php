@@ -12,7 +12,6 @@ catch(Exception $e) {
 ?>
 
 
-<!-- Affichage -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +21,8 @@ catch(Exception $e) {
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
 
+
+<!-- Affichage -->
 	<?php
 
 	// Je récupère toutes les données
@@ -48,7 +49,7 @@ catch(Exception $e) {
 
 
 	// Je récupère les id et les noms
-	$browse = $database->query('SELECT id, name FROM user ORDER BY name DESC LIMIT 1, 2');
+	$browse = $database->query('SELECT id, name FROM user ORDER BY id DESC LIMIT 0, 2');
 
 	?>
 	<p>
@@ -64,34 +65,63 @@ catch(Exception $e) {
 		<?php
 			}
 
-			// je termine la requête
-			$browse->closeCursor();
-
-			$id = '';
-			$name = 'test';
-			$email = 'test@te.st';
-			$password = 'test';
-
-			try {
-				$add = $database->prepare('INSERT INTO user(id, name, email, password) VALUES (:id, :name, :email, :password)');
-				$add->execute(array(
-					'id' => $id,
-					'name' => $name,
-					'email' => $email,
-					'password' => $password
-				));
-
-				echo 'ok tout est bon';
-			}
-
-			catch(Exception $e)
-
-			{
-			        die('Erreur : '.$e->getMessage());
-			}
-
+		// je termine la requête
+		$browse->closeCursor();
 		?>
 	</p>
+
+
+<!-- Modification -->
+	<?php
+
+	$newname = 'modif';
+	$newmail = 'modif@mod.if';
+	$oldname = 'test';
+
+	try {
+		$update = $database->prepare('UPDATE user SET name = :newname, email = :newmail WHERE name = :oldname');
+		$update->execute(array(
+		'newname' => $newname,
+		'newmail' => $newmail,
+		'oldname' => $oldname
+		));
+
+		echo 'ça marche l\'update';
+	} catch(Exception $e) {
+	        die('Erreur : '.$e->getMessage());
+	}
+
+	?>
+
+
+	<!-- Écriture -->
+	<?php
+
+	$id = '';
+	$name = 'test';
+	$email = 'test@te.st';
+	$password = 'test';
+
+	try {
+		$add = $database->prepare('INSERT INTO user(name, email, password) VALUES (:name, :email, :password)');
+		$add->execute(array(
+			'name' => $name,
+			'email' => $email,
+			'password' => $password
+		));
+
+		echo 'ok tout est bon';
+	}
+
+	catch(Exception $e)
+
+	{
+	        die('Erreur : '.$e->getMessage());
+	}
+
+	?>
+
+
 
 </body>
 </html>
