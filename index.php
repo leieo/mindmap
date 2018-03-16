@@ -22,16 +22,11 @@ catch(Exception $e) {
 </head>
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
-
-	<h2>Affichage</h2>
-
-	<h3>Membres</h3>
-
-	<h4>Membres premium</h4>
-
-	<h5>Plus d'un an d'ancienneté</h5>
-
-	<h6>Renouvellement automatique</h6>                                                           
+	<h2>Afficher un titre en h2</h2>
+	<h3>Afficher un titre en h3</h3>
+	<h4>Afficher un titre en h4</h4>
+	<h5>Afficher un titre en h5</h5>
+	<h6>Afficher un titre en h6</h6>                                                           
 
 <!-- Affichage -->
 	<?php

@@ -10,7 +10,12 @@ h1 {
 	letter-spacing: 3px;
 }
 
-h2, h3, h4 {
+h2 {
+	font-size: 28px;
+	letter-spacing: 5px;
+}
+
+h3, h4 {
 	text-transform: uppercase;
 	letter-spacing: 8px;
 }
