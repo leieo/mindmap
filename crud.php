@@ -23,15 +23,6 @@ catch(Exception $e) {
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
 
-	<h2>Affichage</h2>
-
-	<h3>Membres</h3>
-
-	<h4>Membres premium</h4>
-
-	<h5>Plus d'un an d'ancienneté</h5>
-
-	<h6>Renouvellement automatique</h6>                                                           
 
 <!-- Affichage -->
 	<?php
@@ -105,6 +96,51 @@ catch(Exception $e) {
 	$update->closeCursor();
 
 	?>
+
+
+	<!-- Écriture -->
+	<?php
+
+	$id = '';
+	$name = 'test';
+	$email = 'test@te.st';
+	$password = 'test';
+
+	try {
+		$add = $database->prepare('INSERT INTO user(name, email, password) VALUES (:name, :email, :password)');
+		$add->execute(array(
+			'name' => $name,
+			'email' => $email,
+			'password' => $password
+		));
+
+		echo 'ajouter ça marche / ';
+	}
+
+	catch(Exception $e)
+
+	{
+	        die('Erreur : '.$e->getMessage());
+	}
+
+	$add->closeCursor();
+
+	?>
+
+	<?php
+	try {
+			$database->exec('DELETE FROM user WHERE name=\'modif\'');
+			echo 'supprimer au poil / ';
+	} catch(Exception $e) {
+	        die('Erreur : '.$e->getMessage());
+	}
+	/*
+	$nb_deletions = 
+	echo $nb_deletions . ' entrées ont été supprimées !';
+	*/
+	?>
+
+
 
 </body>
 </html>
