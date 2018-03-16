@@ -1,5 +1,8 @@
 /* <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">*/
 
+* {
+	padding: 4px;
+}
 body {
 	font-family:  'Cutive Mono', monospace;
 	font-size: 18px;
@@ -37,6 +40,11 @@ h6 {
     filter: alpha(opacity=50);
 }
 
-p {
+.warning {
+	color: darkred;
+}
+
+#form {
+	padding-top: 20px;
 }
 

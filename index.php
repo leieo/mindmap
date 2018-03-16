@@ -9,6 +9,46 @@ catch(Exception $e) {
         die('Erreur : '.$e->getMessage());
 }
 
+if (isset($_POST['registerform'])) {
+	if(!empty($_POST['name']) AND !empty($_POST['mail']) AND !empty($_POST['mail2']) AND !empty($_POST['password']) AND !empty($_POST['password2'])) {
+		$name = htmlspecialchars($_POST['name']);
+		$mail = htmlspecialchars($_POST['mail']);
+		$mail2 = htmlspecialchars($_POST['mail2']);
+		$password = sha1($_POST['password']);
+		$password2 = sha1($_POST['password2']);
+
+		$namelength = strlen($name);
+		if ($namelength <= 255) {
+
+			$maillength = strlen($mail);
+			if ($maillength <= 255) {
+
+				if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+
+					if ($mail == $mail2) {
+
+						if ($password == $password2) {
+							echo '... tout est bon ...';
+						} else {
+							$error = "password check not ok";
+						}
+					} else {
+						$error = "mail check not ok";
+					}
+				} else {
+					$error = "mail non valide";
+				}
+			} else {
+				$error = "mail trop long";
+			}
+		} else {
+			$error = "pseudo trop long";
+		}
+	} else {
+		$error = "All fields are required ...";
+	}
+}
+
 ?>
 
 
@@ -21,85 +61,69 @@ catch(Exception $e) {
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-	<h1><?php echo 'Hello World' ?></h1>
-	<h2>Afficher un titre en h2</h2>
-	<h3>Afficher un titre en h3</h3>
-	<h4>Afficher un titre en h4</h4>
-	<h5>Afficher un titre en h5</h5>
-	<h6>Afficher un titre en h6</h6>                                                           
-
-<!-- Affichage -->
-	<?php
-
-	// Je récupère toutes les données
-	$query = $database->query('SELECT * FROM user');
-
-	// Je récupère chaque entrée (ligne) une par une ...
-	while ($data = $query->fetch()) {
-	?>
-	
-	<!-- ... et affiche une à une les données qu'elle contient. -->
-	<p>
-		<strong>Member <?php echo $data['id']; ?> </strong><br>
-		Name : <?php echo $data['name']; ?> <br>
-		Email : <?php echo $data['email']; ?> <br>
-		Password : <?php echo $data['password']; ?>
-
-	</p> 
-
-	<?php
-	}
-
-	// Je clotûre le traitement de la requête
-	$query->closeCursor();
-
-
-	// Je récupère les id et les noms
-	$browse = $database->query('SELECT id, name FROM user ORDER BY id DESC LIMIT 0, 2');
-
-	?>
-	<p>
+	<div align="center">
+		<form method="POST" action="">
+			<table>
+				<tr>
+					<td></td>
+					<td align="center">
+						<h2>Register</h2>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label for="name">Name > </label>
+					</td>
+					<td>
+						<input type="text" id="name" name="name" placeholder="Choose a name">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label for="mail">Mail > </label>
+					</td>
+					<td>
+						<input type="email" id="mail" name="mail" placeholder="Your e-mail">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label for="mail2"> > </label>
+					</td>
+					<td>
+						<input type="email" id="mail2" name="mail2" placeholder="Confirm your e-mail">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label for="password">Password > </label>
+					</td>
+					<td>
+						<input type="password" id="password" name="password" placeholder="Your password">
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<label for="password2"> > </label>
+					</td>
+					<td>
+						<input type="password" id="password2" name="password2" placeholder="Confirm your password">
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td align="center">
+						<br>
+						<input type="submit" name="registerform" value="Register">
+					</td>
+				</tr>
+			</table>
+		</form>      
 		<?php
-			// Je récupère chaque entrée (ligne) une par une ...
-			while ($username = $browse->fetch()) {
-		?>
-		
-		<!-- ... et affiche une à une les données qu'elle contient. -->
-		<strong> <?php echo $username['id']; ?> </strong>
-		<?php echo $username['name']; ?> <br>
-
-		<?php
-			}
-
-		// je termine la requête
-		$browse->closeCursor();
-		?>
-	</p>
-
-
-<!-- Modification -->
-	<?php
-
-	$newname = 'modif';
-	$newmail = 'modif@mod.if';
-	$oldname = 'test';
-
-	try {
-		$update = $database->prepare('UPDATE user SET name = :newname, email = :newmail WHERE name = :oldname AND id%2 = 0');
-		$update->execute(array(
-		'newname' => $newname,
-		'newmail' => $newmail,
-		'oldname' => $oldname
-		));
-
-		echo 'modifier ok / ';
-	} catch(Exception $e) {
-	        die('Erreur : '.$e->getMessage());
-	}
-
-	$update->closeCursor();
-
-	?>
-
+		if (isset($error)) {
+			echo '<strong class="warning">'.$error.'</strong>';
+		}
+		?>    
+	</div>
 </body>
 </html>

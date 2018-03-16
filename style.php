@@ -22,7 +22,11 @@ catch(Exception $e) {
 </head>
 <body>
 	<h1><?php echo 'Hello World' ?></h1>
-
+	<h2>Afficher un titre en h2</h2>
+	<h3>Afficher un titre en h3</h3>
+	<h4>Afficher un titre en h4</h4>
+	<h5>Afficher un titre en h5</h5>
+	<h6>Afficher un titre en h6</h6>                                                           
 
 <!-- Affichage -->
 	<?php
@@ -96,52 +100,6 @@ catch(Exception $e) {
 	$update->closeCursor();
 
 	?>
-
-
-	<!-- Écriture -->
-	<?php
-
-	$id = '';
-	$name = 'test';
-	$email = 'test@te.st';
-	$password = 'test';
-
-	try {
-		$add = $database->prepare('INSERT INTO user(name, email, password) VALUES (:name, :email, :password)');
-		$add->execute(array(
-			'name' => $name,
-			'email' => $email,
-			'password' => $password
-		));
-
-		echo 'ajouter ça marche / ';
-	}
-
-	catch(Exception $e)
-
-	{
-	        die('Erreur : '.$e->getMessage());
-	}
-
-	$add->closeCursor();
-
-	?>
-
-<!-- Suppression -->
-	<?php
-	try {
-			$database->exec('DELETE FROM user WHERE name=\'modif\'');
-			echo 'supprimer au poil / ';
-	} catch(Exception $e) {
-	        die('Erreur : '.$e->getMessage());
-	}
-	/*
-	$nb_deletions = 
-	echo $nb_deletions . ' entrées ont été supprimées !';
-	*/
-	?>
-
-
 
 </body>
 </html>
