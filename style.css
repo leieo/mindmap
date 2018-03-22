@@ -40,7 +40,9 @@ h6 {
     filter: alpha(opacity=50);
 }
 
-.warning {
+.alert {
+
+	font-size: 0.85rem;
 	color: darkred;
 }
 
