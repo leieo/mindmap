@@ -26,12 +26,21 @@ if (isset($_GET['id']) AND $_GET['id'] > 0) {
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
+
+<?php 
+	if (isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) 
+	{
+?>
+	
+	<header align="right">
+		<a href="">My account</a>  |  <a href="./logout.php">Log out</a>
+	</header>
 	<div align="center">
 		<table>
 			<tr>
 				<td></td>
 				<td align="left">
-					<h2>Welcome <?php echo $userinfo['name']; ?></h2>
+					<h2>Welcome <?php echo $userinfo['name']; ?> ! </h2>
 				</td>
 			</tr>
 			<tr>
@@ -50,34 +59,18 @@ if (isset($_GET['id']) AND $_GET['id'] > 0) {
 					<?php echo $userinfo['email']; ?>
 				</td>
 			</tr>
-<?php 
-	if (isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) 
-	{
-?>
-			<tr>
-				<td></td>
-				<td>
-					<strong>
-						<a href="">Éditer</a> mon profil
-						<br>
-						<a href="./logout.php">Déconnexion</a>
-					</strong>
-				</td>
-			</tr>
-<?php 
-	} else { 
-		echo 'raté';
-	}
-?>
 		</table>
 	</div>
+
+<?php 
+		} else { 
+			header("Location: error.php");
+		}
+
+	} else {
+		header("Location: error.php");
+	}
+?>
+
 </body>
 </html>
-<?php
-} 
-/*
-else {
-	header("Location: error.php");
-}
-*/
-?>

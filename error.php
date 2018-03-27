@@ -16,6 +16,7 @@
 			<tr>
 				<td>
 					<p>Il y a un problème ...</p>
+					<br/><br/>> 
 					<strong><a href="./index.php">Retour</a> à la page d'accueil</strong>
 				</td>
 			</tr>
