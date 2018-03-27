@@ -47,7 +47,7 @@ if (isset($_POST['registerform'])) {
 										'password' => $password
 									));
 									//
-									$alert = "... votre compte a bien été créé ...";
+									$alert = "Welcome ! <br/><br/> You can log in <a href=\"./login.php\">here</a>";
 									// OU
 									// header('Location : index.php');
 									// $_SESSION['registered'] = "... compte créé ..."
@@ -90,6 +90,9 @@ if (isset($_POST['registerform'])) {
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
+	<header align="right">
+		Log in <a href="./login.php">here</a>
+	</header>
 	<div align="center">
 		<form method="POST" action="">
 			<table>

@@ -7,13 +7,18 @@
 	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-	<header align="center">
-	<br/>
-			<a href="./login.php">Log in</a> | 
-			<a href="./register.php">Register</a>
-	</header>
-	<main class="home">
-		<h1>Hello World</h1>
-	</main>
+	<table align="center">
+			<tr>
+				<td align="center">
+					<h2>Ooops !</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Il y a un problème ...</p>
+					<strong><a href="./index.php">Retour</a> à la page d'accueil</strong>
+				</td>
+			</tr>
+	</table>
 </body>
 </html>

@@ -3,13 +3,23 @@
 * {
 	padding: 4px;
 }
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 body {
 	font-family:  'Cutive Mono', monospace;
 	font-size: 18px;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 55px;
 	letter-spacing: 3px;
 }
 
@@ -41,9 +51,18 @@ h6 {
 }
 
 .alert {
-
 	font-size: 0.85rem;
 	color: darkred;
+}
+
+.home {
+	text-align: center;
+	padding-top: 30vh;
+}
+
+.home h1 {
+	padding: 0px;
+	margin: 0px;
 }
 
 #form {
