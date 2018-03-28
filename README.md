@@ -1,6 +1,8 @@
 ### Projet professionnel
 ###### élaboré dans le cadre de la formation 'Développeur.euse web' à Simplon.co, pour l'obtention du titre professionnel 'développeur logiciel'.
 
+Dépôt associé [ici](https://github.com/leieo/chefdoeuvre-mvc) (passage en architecture MVC)
+
 # Assistant de création de projet (moodboard)
 
 Création d'un outil en ligne qui permet de rassembler en un même endroit les références et inspirations qui servent à la création d'un projet. Images, photos, plans, schémas, vidéos, podcasts, lectures, citations, musiques entendues, captures d'écran, lieux visités. L'outil peut également être utilisé directement pour produire du contenu (notes, photos, commentaires, etc.) 
@@ -13,6 +15,7 @@ L'usage de base est **gratuit**. Les projets en cours sont **publics** et consul
 + [lots fonctionnels & user stories](#lots_us)
 + [objectif visé](#objectif)
 + [trello](https://trello.com/b/Cx1Ofg1Q/moodboard)
++ [sprint goals](#sprints)
 
 ***
 
@@ -179,4 +182,36 @@ Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... :
 + le lot **9.**
 + la complétion du lot **8.**
 + la complétion du lot **3.**
+
+***
+
+## <a name="sprints"></a>Sprints goals
+
+#### Sprint 2 - Gérer une collection d'éléments
+
+###### Done
+
++ export des fichiers SQL
++ connexion à un espace membre (**US 1.2**)
+
+###### To do
+
+**US 1.2.** > En tant qu'utilisatrice, je peux me connecter à mon espace personnel, et ainsi accéder aux fonctionnalités gratuites de l'outil.  ->  ( 8 )
+
+**US 2.1.** > En tant qu'utilisateur, je peux créer un nouveau projet et le nommer, parce que j'ai besoin d'un nouvel espace où rassembler mes idées, dédié à un projet spécifique.  ->  ( 5 )
+
+**US 3.2.** > En tant qu'utilisatrice, je peux créer des éléments textuels pour alimenter les bibliothèques de mes projets. ( "éléments textuels" = mots clés, liens, notes ) -> ( 1 )
+
+**US 3.3** > En tant qu'utilisatrice, je peux modifier ou supprimer un élément, et parcourir l'ensemble des éléments ajoutés, pour gérer les bibliothèques de mes projets. ( 3 )
+
+**US 4.1.** > En tant qu'utilisateur, je peux associer mes éléments à un projet (ou plusieurs) pour alimenter les bibliothèques de mes projets. ( 5 )
+
+
+#### Sprint 1
+
+###### Done
++ mise en place d'une première version de la base de donnée
++ formulaire d'enregistrement qui permet d'ajouter des utilisateurs dans la table user (**US 1.1.**)
++ écriture des fonctionnalités CRUD / BREAD en php natif,  pour le moment sans formulaire permettant d'agir sur les fonctionnalités de modification ou de suppression.
+
 
