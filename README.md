@@ -206,6 +206,7 @@ Les versions suivantes pourront ensuite inclure, par ordre de priorité,  ... :
 
 **US 4.1.** > En tant qu'utilisateur, je peux associer mes éléments à un projet (ou plusieurs) pour alimenter les bibliothèques de mes projets. ( 5 )
 
+---
 
 #### Sprint 1
 
