@@ -29,7 +29,6 @@ h2 {
 }
 
 h3, h4 {
-	text-transform: uppercase;
 	letter-spacing: 8px;
 }
 
@@ -53,6 +52,11 @@ h6 {
 .alert {
 	font-size: 0.85rem;
 	color: darkred;
+}
+
+.feature {
+	border: solid 1px black;
+	padding: 9px 20px;
 }
 
 .home {

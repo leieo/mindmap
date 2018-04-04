@@ -26,7 +26,11 @@ catch(Exception $e) {
 	<h3>Afficher un titre en h3</h3>
 	<h4>Afficher un titre en h4</h4>
 	<h5>Afficher un titre en h5</h5>
-	<h6>Afficher un titre en h6</h6>                                                           
+	<h6>Afficher un titre en h6</h6>        
+	<br/>
+	<h1><span class="feature">+</span></h1>
+	<br/>
+	<h3 class="feature">Test</h3>                                                   
 
 <!-- Affichage -->
 	<?php
